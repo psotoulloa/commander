@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" >
+    <link rel="stylesheet" href="/bower_components/bootswatch-dist/css/bootstrap.min.css" >
+    <style >
+      body { padding-top: 70px; }
+    </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand">Tablet app</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <h2>Lista de productos</h2>
+        <h3>Filtros...</h3>
+      <div class='row'>
+        <div class='col-md-4'>
+          <div class="list-group">
+            <a href="/common2.html?id_producto=1" class="list-group-item ">
+              <h4 class="list-group-item-heading">Zapatilla 1</h4>
+              <p class="list-group-item-text">Descripción Zapatilla 1</p>
+            </a>
+            <a href="/common2.html?id_producto=2" class="list-group-item ">
+              <h4 class="list-group-item-heading">Zapatilla 2</h4>
+              <p class="list-group-item-text">Descripción Zapatilla 2</p>
+            </a>
+            <a href="/common2.html?id_producto=3" class="list-group-item ">
+              <h4 class="list-group-item-heading">Zapatilla 3</h4>
+              <p class="list-group-item-text">Descripción Zapatilla 3</p>
+            </a>
+          </div>
+        </div>
+        <div class='col-md-4'>
+          <div class="list-group">
+            <a href="/common2.html?id_producto=4" class="list-group-item ">
+              <h4 class="list-group-item-heading">Zapatilla 4</h4>
+              <p class="list-group-item-text">Descripción Zapatilla 5</p>
+            </a>
+            <a href="/common2.html?id_producto=5" class="list-group-item ">
+              <h4 class="list-group-item-heading">Zapatilla 5</h4>
+              <p class="list-group-item-text">Descripción Zapatilla 5</p>
+            </a>
+            <a href="/common2.html?id_producto=6" class="list-group-item ">
+              <h4 class="list-group-item-heading">Zapatilla 6</h4>
+              <p class="list-group-item-text">Descripción Zapatilla 6</p>
+            </a>
+          </div>
+        </div>
+        <div class='col-md-4'>
+          <div class="list-group">
+            <a href="/common2.html?id_producto=7" class="list-group-item ">
+              <h4 class="list-group-item-heading">Zapatilla 7</h4>
+              <p class="list-group-item-text">Descripción Zapatilla 7</p>
+            </a>
+            <a href="/common2.html?id_producto=8" class="list-group-item ">
+              <h4 class="list-group-item-heading">Zapatilla 8</h4>
+              <p class="list-group-item-text">Descripción Zapatilla 8</p>
+            </a>
+            <a href="/common2.html?id_producto=9" class="list-group-item ">
+              <h4 class="list-group-item-heading">Zapatilla 9</h4>
+              <p class="list-group-item-text">Descripción Zapatilla 9</p>
+            </a>
+          </div>
+        </div>
+        <div class='col-md-12'>
+          <a href='custom1.html' class='btn btn-default pull-right'>Volver</a>
+        </div>
+      </div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/socket.io-client/dist/socket.io.js"></script>
+    <script src="js/commander.js"></script>
+    <script type="text/javascript">
+      Commander.start();
+      Commander.changeUrl("/common1.html");
+    </script>
+  </body>
+</html>

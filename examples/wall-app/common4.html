@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" >
+    <link rel="stylesheet" href="/bower_components/bootswatch-dist/css/bootstrap.min.css" >
+    <style >
+      body { padding-top: 70px; }
+    </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand">Tablet app</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class='row'>
+          <div class='col-md-8 col-md-offset-2 well'>
+            <h3>Video </h3>
+            <div id='video'></div>
+          </div>
+
+      </div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/socket.io-client/dist/socket.io.js"></script>
+    <script src="js/slave.js"></script>
+    <script  type="text/javascript">
+      Slave.addFunciton("iniciarVideo",function(data){
+        console.log("iniciarVideo",data);
+        $("#video").html("Iniciando video ... var1 = "+data.var1);
+      });
+      Slave.addFunciton("detenerVideo",function(data){
+        console.log("detenerVideo",data);
+        $("#video").html("Deteniendo video ... var1 = "+data.var1);
+      });
+      Slave.start();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "wall-app",
+  "authors": [
+    "Patricio Soto <pjsoto@uc.cl>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "socket.io-client": "^2.0.3",
+    "bootswatch": "^3.3.7",
+    "bootswatch-dist": "yeti"
+  }
+}

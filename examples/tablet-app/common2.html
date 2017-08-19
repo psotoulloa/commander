@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" >
+    <link rel="stylesheet" href="/bower_components/bootswatch-dist/css/bootstrap.min.css" >
+    <style >
+      body { padding-top: 70px; }
+    </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand">Tablet app</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="container-fliud">
+          <div class="wrapper row">
+            <div class="preview col-md-6">
+                <img src="https://http2.mlstatic.com/zapatillas-nike-zoom-winflo-running-hombre-unica-684488-403-D_NQ_NP_125221-MLA20739952358_052016-F.jpg"  class='img-rounded img-responsive'/>
+            </div>
+            <div class="details col-md-6">
+              <h3 class="product-title">Zapatilla X (sacar de base de datos)</h3>
+              <div class="rating">
+                <div class="stars">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+
+              </div>
+              <p class="product-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin accumsan sit amet nulla a placerat. Praesent suscipit neque vestibulum dui maximus suscipit sit amet eget risus. Vivamus auctor dignissim lacus eget lacinia. Praesent urna neque, volutpat sed tortor ullamcorper, fermentum maximus purus. Nunc vel tincidunt ipsum. Phasellus eget varius nunc. Nulla tincidunt vehicula tortor, id rhoncus odio. Aliquam id lacus ut purus dapibus elementum a at diam. Duis luctus malesuada scelerisque. Curabitur porta tristique vulputate.
+              </p>
+              <h4 class="price">Precio: <span>$180.000</span></h4>
+
+              <div class="action">
+                <a href='/common3.html' class="add-to-cart btn btn-primary" >Probar zapatilla</a>
+                <a href='/common1.html' class="add-to-cart btn btn-default" >Volver</a>
+              </div>
+              <br/>
+              <p class="product-description well">
+                <b>Tips de venta</b> : Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/socket.io-client/dist/socket.io.js"></script>
+    <script src="js/commander.js"></script>
+    <script type="text/javascript">
+      Commander.start();
+      Commander.changeUrl("/common2.html?id_producto="+Commander.getParameterByName("id_producto"));
+    </script>
+  </body>
+</html>
