@@ -17,7 +17,7 @@ var Commander = {
    * Método que inicia la conexión
    */
   start : function(){
-    this.socket = io('http://localhost:3000');
+    this.socket = io('http://192.168.0.16:3000');
   },
   /**
    * Método que ejecuta una función en el esclavo
